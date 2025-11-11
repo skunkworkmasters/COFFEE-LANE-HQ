@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Coffee-themed color palette */
+    --background: 42 25% 96%;
+    --foreground: 30 20% 15%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 30 20% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 20% 15%;
+    
+    /* Espresso Brown - Primary brand color */
+    --primary: 25 35% 25%;
+    --primary-foreground: 42 25% 96%;
+    
+    /* Caramel - Secondary accent */
+    --secondary: 35 55% 65%;
+    --secondary-foreground: 30 20% 15%;
+    
+    /* Cream - Muted surfaces */
+    --muted: 42 25% 88%;
+    --muted-foreground: 30 15% 40%;
+    
+    /* Mocha - Accent color */
+    --accent: 20 40% 45%;
+    --accent-foreground: 42 25% 96%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 25 35% 25%;
+    
+    --radius: 0.5rem;
+    
+    /* Sidebar colors */
+    --sidebar-background: 30 20% 98%;
+    --sidebar-foreground: 30 20% 15%;
+    --sidebar-primary: 25 35% 25%;
+    --sidebar-primary-foreground: 42 25% 96%;
+    --sidebar-accent: 42 25% 88%;
+    --sidebar-accent-foreground: 30 20% 15%;
+    --sidebar-border: 35 20% 85%;
+    --sidebar-ring: 25 35% 25%;
+  }
+
+  .dark {
+    --background: 30 20% 10%;
+    --foreground: 42 25% 96%;
+    
+    --card: 30 15% 15%;
+    --card-foreground: 42 25% 96%;
+    
+    --popover: 30 15% 15%;
+    --popover-foreground: 42 25% 96%;
+    
+    --primary: 35 55% 65%;
+    --primary-foreground: 30 20% 15%;
+    
+    --secondary: 25 25% 25%;
+    --secondary-foreground: 42 25% 96%;
+    
+    --muted: 30 15% 20%;
+    --muted-foreground: 42 15% 70%;
+    
+    --accent: 20 40% 45%;
+    --accent-foreground: 42 25% 96%;
+    
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 30 15% 25%;
+    --input: 30 15% 25%;
+    --ring: 35 55% 65%;
+    
+    --sidebar-background: 30 15% 12%;
+    --sidebar-foreground: 42 25% 96%;
+    --sidebar-primary: 35 55% 65%;
+    --sidebar-primary-foreground: 30 20% 15%;
+    --sidebar-accent: 30 15% 20%;
+    --sidebar-accent-foreground: 42 25% 96%;
+    --sidebar-border: 30 15% 25%;
+    --sidebar-ring: 35 55% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
